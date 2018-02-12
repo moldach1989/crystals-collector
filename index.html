@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector</title>
+
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+  
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+		
+<div class="container">
+    <div class="row">
+		
+		<h1 class="text-center">Crystals Collector by Matt </h1>
+        
+        <!-- Instructions Panel -->
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Instructions</h3>
+                </div>
+
+	            <div class="panel-body">    
+				    <p>You will be given a random number at the start of the game.</p>
+				    
+				    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				    
+				    <p>You will win the game by matching your total score to the random number, you will lose the game if your total score goes above the random number.</p>
+				    
+				    <p>The value of each crystal is hidden from you until you click on it.</p>
+
+				    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+				</div>
+            </div>
+        </div>
+
+        <!-- Game Panel -->
+        <div class="col-lg-6">
+        <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Game</h3>
+                </div>
+                <div class="panel-body">
+                <div class="row crystalContainer">
+                    <button id="yellowCrystal" class="btn btn-primary crystal one" value=""><h1></h1></button>
+                    <button id="blueCrystal" class="btn btn-primary crystal two" value=""><h1></h1></button>
+                    <button id="redCrystal" class="btn btn-primary crystal three" value=""><h1></h1></button>
+                    <button id="pinkCrystal" class="btn btn-primary crystal four" value=""><h1></h1></button>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-4 subhead">Magic Number
+            <div id="totalScore" class="num"></div>
+          </div>
+					
+          <div class="col-lg-4 subhead">Your Total Score
+            <div id="currentScore" class="num"></div>
+          </div>
+					
+          <div class="col-lg-4">
+						<strong>Wins:</strong><br><div id="wins"></div>
+						<strong>Losses:</strong><div id="loss"></div>
+					</div>					
+				</div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/javascript/game.js"></script>
+
+ </body>
+</html>
+  
